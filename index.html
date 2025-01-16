@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Expense Tracker</h1>
+
+    <!-- Input Form for Expenses -->
+    <div class="input-section">
+      <input type="number" id="income" placeholder="Enter Income">
+      <input type="number" id="expense" placeholder="Enter Expense Amount">
+      <input type="text" id="category" placeholder="Enter Category (e.g., Food, Rent)">
+      <button id="add-entry">Add Entry</button>
+    </div>
+
+    <!-- Goal Section -->
+    <div class="goal-section">
+      <input type="number" id="goalAmount" placeholder="Set Financial Goal">
+      <button id="set-goal">Set Goal</button>
+    </div>
+
+    <!-- Goal Progress -->
+    <div class="progress-section">
+      <p>Goal: $<span id="goal-display">0</span></p>
+      <p>Progress: <span id="goal-progress">0%</span></p>
+      <div class="progress-bar">
+        <div id="progress-bar" class="bar"></div>
+      </div>
+    </div>
+
+    <!-- Financial Summary -->
+    <div class="financial-summary">
+      <p>Total Income: $<span id="total-income">0</span></p>
+      <p>Total Expense: $<span id="total-expense">0</span></p>
+      <p>Balance: $<span id="balance">0</span></p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
